@@ -1,11 +1,12 @@
+import 'package:agrotalk/Pages/Admin%20Page/RnBPage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'HomePage.dart';
 import 'ArticlePage.dart';
 import 'PopularPage.dart';
-import 'AddTopicPage.dart';
 import 'ProfilePage.dart';
+import 'NotificationPage.dart';
 
 class LandingPage extends StatefulWidget {
   const LandingPage({super.key});
@@ -20,7 +21,7 @@ class _LandingPageState extends State<LandingPage> {
     new HomePage(),
     new ArticlePage(),
     new PopularPage(),
-    new AddTopicPage()
+    new RnBPage()
   ];
 
   @override
@@ -36,7 +37,14 @@ class _LandingPageState extends State<LandingPage> {
         ),
         actions: [
           IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const NotificationPage(),
+                  ),
+                );
+              },
               icon: const Icon(
                 Icons.notifications,
                 color: Color(0xFF4F7D43),
@@ -61,47 +69,51 @@ class _LandingPageState extends State<LandingPage> {
         ],
       ),
       body: _container[_bottomNavCurrentIndex],
-      bottomNavigationBar: BottomNavigationBar(
-        showSelectedLabels: false,
-        showUnselectedLabels: false,
-        backgroundColor: Color(0xFF4F7D43),
-        type: BottomNavigationBarType.fixed,
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(
-              FontAwesomeIcons.earthAsia,
-              color: Color.fromARGB(255, 255, 255, 255),
+      bottomNavigationBar: SizedBox(
+        height: 70,
+        child: BottomNavigationBar(
+          iconSize: 35,
+          showSelectedLabels: false,
+          showUnselectedLabels: false,
+          backgroundColor: Color(0xFF4F7D43),
+          type: BottomNavigationBarType.fixed,
+          items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+              icon: Icon(
+                FontAwesomeIcons.earthAsia,
+                color: Color.fromARGB(255, 255, 255, 255),
+              ),
+              label: 'Home Page',
             ),
-            label: 'Home Page',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.newspaper,
-              color: Color.fromARGB(255, 255, 255, 255),
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.newspaper,
+                color: Color.fromARGB(255, 255, 255, 255),
+              ),
+              label: 'Artikel Page',
             ),
-            label: 'Artikel Page',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              FontAwesomeIcons.trophy,
-              color: Color.fromARGB(255, 255, 255, 255),
+            BottomNavigationBarItem(
+              icon: Icon(
+                FontAwesomeIcons.trophy,
+                color: Color.fromARGB(255, 255, 255, 255),
+              ),
+              label: 'Popular Page',
             ),
-            label: 'Popular Page',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.report_rounded,
-              color: Color.fromARGB(255, 255, 255, 255),
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.report_rounded,
+                color: Color.fromARGB(255, 255, 255, 255),
+              ),
+              label: 'Report n Block',
             ),
-            label: 'Report n Block',
-          ),
-        ],
-        currentIndex: _bottomNavCurrentIndex,
-        onTap: (index) {
-          setState(() {
-            _bottomNavCurrentIndex = index;
-          });
-        },
+          ],
+          currentIndex: _bottomNavCurrentIndex,
+          onTap: (index) {
+            setState(() {
+              _bottomNavCurrentIndex = index;
+            });
+          },
+        ),
       ),
     );
   }

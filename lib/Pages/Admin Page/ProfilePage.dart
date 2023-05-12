@@ -1,6 +1,8 @@
+import 'package:agrotalk/Pages/Admin%20Page/NotificationPage.dart';
 import 'package:flutter/material.dart';
 import '../loginPage.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'LandingPage.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
@@ -13,6 +15,48 @@ class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        toolbarHeight: 60,
+        automaticallyImplyLeading: false,
+        backgroundColor: Colors.white,
+        title: IconButton(
+          icon: Icon(
+            Icons.arrow_back,
+            color: Color(0xFF4F7D43),
+            size: 30,
+          ),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+        actions: [
+          IconButton(
+              onPressed: () {
+                Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const NotificationPage(),
+                ),
+              );
+              },
+              icon: const Icon(
+                Icons.notifications,
+                color: Color(0xFF4F7D43),
+                size: 30,
+              )),
+          IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: const Icon(
+              Icons.account_circle_rounded,
+              color: Color(0xFF4F7D43),
+              size: 30,
+            ),
+            padding: EdgeInsets.fromLTRB(10, 0, 30, 0),
+          ),
+        ],
+      ),
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(

@@ -27,6 +27,8 @@ class _AddTopicPageState extends State<AddTopicPage> {
         slivers: [
           SliverToBoxAdapter(
             child: new Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Padding(
                   padding: const EdgeInsets.all(20.0),
