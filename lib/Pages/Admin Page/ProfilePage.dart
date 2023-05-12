@@ -25,40 +25,6 @@ class _ProfilePageState extends State<ProfilePage> {
         ),
         child: CustomScrollView(
           slivers: [
-            SliverAppBar(
-              toolbarHeight: 60,
-              automaticallyImplyLeading: false,
-              backgroundColor: Colors.white,
-              title: Image.asset(
-                'assets/image/Logo.png',
-                height: 70,
-              ),
-              actions: [
-                IconButton(
-                    onPressed: () {},
-                    icon: const Icon(
-                      Icons.notifications,
-                      color: Color(0xFF4F7D43),
-                      size: 30,
-                    )),
-                IconButton(
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const ProfilePage(),
-                      ),
-                    );
-                  },
-                  icon: const Icon(
-                    Icons.account_circle_rounded,
-                    color: Color(0xFF4F7D43),
-                    size: 30,
-                  ),
-                  padding: EdgeInsets.fromLTRB(10, 0, 30, 0),
-                )
-              ],
-            ),
             SliverToBoxAdapter(
               child: new Column(
                 children: [
@@ -134,43 +100,6 @@ class _ProfilePageState extends State<ProfilePage> {
             ),
           ],
         ),
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        showSelectedLabels: false,
-        showUnselectedLabels: false,
-        backgroundColor: Color(0xFF4F7D43),
-        type: BottomNavigationBarType.fixed,
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(
-              FontAwesomeIcons.earthAsia,
-              color: Color.fromARGB(255, 255, 255, 255),
-            ),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.leaderboard,
-              color: Color.fromARGB(255, 255, 255, 255),
-            ),
-            label: 'Artikel',
-            
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              FontAwesomeIcons.trophy,
-              color: Color.fromARGB(255, 255, 255, 255),
-            ),
-            label: 'Populer',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.report_rounded,
-              color: Color.fromARGB(255, 255, 255, 255),
-            ),
-            label: 'Reports n Blocks',
-          ),
-        ],
       ),
     );
   }

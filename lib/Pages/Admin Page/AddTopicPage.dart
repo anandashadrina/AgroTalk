@@ -1,4 +1,5 @@
 import 'package:agrotalk/Pages/Admin%20Page/HomePage.dart';
+import 'package:agrotalk/Pages/Admin%20Page/LandingPage.dart';
 import 'package:flutter/material.dart';
 
 class AddTopicPage extends StatefulWidget {
@@ -24,33 +25,6 @@ class _AddTopicPageState extends State<AddTopicPage> {
       ),
       child: CustomScrollView(
         slivers: [
-          SliverAppBar(
-            toolbarHeight: 60,
-            automaticallyImplyLeading: false,
-            backgroundColor: Colors.white,
-            title: Image.asset(
-              'assets/image/Logo.png',
-              height: 70,
-            ),
-            actions: [
-              IconButton(
-                  onPressed: () {},
-                  icon: const Icon(
-                    Icons.notifications,
-                    color: Color(0xFF4F7D43),
-                    size: 30,
-                  )),
-              IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.account_circle_rounded,
-                  color: Color(0xFF4F7D43),
-                  size: 30,
-                ),
-                padding: EdgeInsets.fromLTRB(10, 0, 30, 0),
-              )
-            ],
-          ),
           SliverToBoxAdapter(
             child: new Column(
               children: [
@@ -89,7 +63,7 @@ class _AddTopicPageState extends State<AddTopicPage> {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => const HomePage(),
+                                    builder: (context) => const LandingPage(),
                                   ),
                                 );
                               },

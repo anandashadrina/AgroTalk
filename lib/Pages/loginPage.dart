@@ -1,3 +1,4 @@
+import 'package:agrotalk/Pages/Admin%20Page/LandingPage.dart';
 import 'package:agrotalk/Pages/RegisterPage.dart';
 import 'Admin Page/HomePage.dart';
 import 'package:flutter/material.dart';
@@ -67,7 +68,7 @@ class _LoginPageState extends State<LoginPage> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const HomePage(),
+                        builder: (context) => const LandingPage(),
                       ),
                     );
                   },
