@@ -1,5 +1,6 @@
 import 'package:agrotalk/Pages/Admin%20Page/HomePage.dart';
 import 'package:agrotalk/Pages/Admin%20Page/LandingPage.dart';
+import 'package:agrotalk/Pages/User%20Page/TopicScroll.dart';
 import 'package:flutter/material.dart';
 
 class AddTopicPage extends StatefulWidget {
@@ -65,7 +66,7 @@ class _AddTopicPageState extends State<AddTopicPage> {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => const LandingPage(),
+                                    builder: (context) => const TopicScroll(),
                                   ),
                                 );
                               },

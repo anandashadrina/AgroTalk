@@ -1,3 +1,4 @@
+import 'package:agrotalk/Pages/User%20Page/TopicScroll.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -83,24 +84,17 @@ class _HomePageState extends State<HomePage> {
                           )),
                     ],
                   ),
+                  //buat nambahin scroll topic
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(12, 0, 0, 0),
+                    child: Container(
+                      height: 40,
+                      width: double.infinity,
+                      child: const TopicScroll(),
+                    ),
+                  ),
                 ],
               ),
-            ),
-          ),
-          SliverToBoxAdapter(
-            child: Column(
-              children: [
-                Container(
-                    height: 50,
-                    child: ListView(
-                      scrollDirection: Axis.horizontal,
-                      children: [
-                        Row(
-                          children: [],
-                        )
-                      ],
-                    )),
-              ],
             ),
           ),
         ],
