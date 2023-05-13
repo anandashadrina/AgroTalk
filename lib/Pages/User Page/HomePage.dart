@@ -60,8 +60,8 @@ class _HomePageState extends State<HomePage> {
                     ],
                   ),
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
+                      SizedBox(width: 50),
                       IconButton(
                           onPressed: () {},
                           icon: const Icon(
@@ -74,8 +74,8 @@ class _HomePageState extends State<HomePage> {
                             Icons.insert_emoticon,
                             color: Color(0xFF4F7D43),
                           )),
+                      SizedBox(width: 130),
                       IconButton(
-                          alignment: Alignment.centerRight,
                           onPressed: () {},
                           icon: const Icon(
                             Icons.send,
@@ -86,56 +86,25 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
-          )
-        ],
-      ),
-
-      /*AppBar(
-        automaticallyImplyLeading: false,
-        backgroundColor: Colors.white,
-        title: Image.asset(
-          'assets/image/Logo.png',
-          height: 70,
-        ),
-        actions: [
-          IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.search, color: Color(0xFF4F7D43))),
-          IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.notifications, color: Color(0xFF4F7D43)))
-        ],
-      ),
-      Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: [
-          SizedBox(
-            height: 1500,
-            child: Container(
-              decoration:
-                  BoxDecoration(color: const Color(0xFFDEE5CB), boxShadow: [
-                BoxShadow(
-                  color: Colors.black26,
-                  blurRadius: 6,
-                )
-              ]),
-              child: Row(
-                children: [
-                  Padding(
-                      padding: const EdgeInsets.only(left: 15.0),
-                      child: CircleAvatar(
-                        backgroundImage: AssetImage('assets/image/user1.jpg'),
-                      )),
-                  TextField(
-                        decoration: InputDecoration(
-                            hintText: 'Apa yang ingin ditanyakan?'),
-                      )
-                ],
-              ),
+          ),
+          SliverToBoxAdapter(
+            child: Column(
+              children: [
+                Container(
+                    height: 50,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: [
+                        Row(
+                          children: [],
+                        )
+                      ],
+                    )),
+              ],
             ),
-          )
+          ),
         ],
-      ),*/
+      ),
     );
   }
 }

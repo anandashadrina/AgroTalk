@@ -1,5 +1,6 @@
 import 'package:agrotalk/Pages/LoginPage.dart';
 import 'package:flutter/material.dart';
+import 'package:agrotalk/Pages/User Page/HomePage.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});
@@ -79,7 +80,14 @@ class _RegisterPageState extends State<RegisterPage> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => HomePage(),
+                      ),
+                    );
+                  },
                   color: const Color(0xFF4F7D43),
                   textColor: Colors.white,
                   child: const Text(
