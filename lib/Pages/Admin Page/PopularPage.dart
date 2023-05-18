@@ -73,6 +73,7 @@ class _PopularPageState extends State<PopularPage> {
                 ],
               ),
             ),
+            
           ],
         ),
       ),
