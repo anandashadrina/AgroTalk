@@ -1,6 +1,6 @@
 import 'package:agrotalk/Pages/LoginPage.dart';
 import 'package:flutter/material.dart';
-import 'package:agrotalk/Pages/User Page/HomePage.dart';
+import 'User Page/LandingPageUser.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});
@@ -84,7 +84,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => HomePage(),
+                        builder: (context) => LandingPageUser(),
                       ),
                     );
                   },

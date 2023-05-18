@@ -52,7 +52,7 @@ class _TopicScrollState extends State<TopicScroll> {
                     color: const Color(0xFFA9B489),
                   ),
                   child: const Text(
-                    'Pupuk',
+                    'Pot Bunga',
                     style: TextStyle(
                       fontFamily: 'Lato',
                       fontSize: 10,
@@ -73,7 +73,7 @@ class _TopicScrollState extends State<TopicScroll> {
                     color: const Color(0xFFA9B489),
                   ),
                   child: const Text(
-                    'Pupuk',
+                    'Pestisida',
                     style: TextStyle(
                       fontFamily: 'Lato',
                       fontSize: 10,
@@ -94,7 +94,7 @@ class _TopicScrollState extends State<TopicScroll> {
                     color: const Color(0xFFA9B489),
                   ),
                   child: const Text(
-                    'Pupuk',
+                    'Kutu Daun',
                     style: TextStyle(
                       fontFamily: 'Lato',
                       fontSize: 10,
@@ -115,7 +115,7 @@ class _TopicScrollState extends State<TopicScroll> {
                     color: const Color(0xFFA9B489),
                   ),
                   child: const Text(
-                    'Pupuk',
+                    'Hidroponik',
                     style: TextStyle(
                       fontFamily: 'Lato',
                       fontSize: 10,
@@ -136,7 +136,7 @@ class _TopicScrollState extends State<TopicScroll> {
                     color: const Color(0xFFA9B489),
                   ),
                   child: const Text(
-                    'Pupuk',
+                    'Bibit',
                     style: TextStyle(
                       fontFamily: 'Lato',
                       fontSize: 10,
@@ -157,28 +157,7 @@ class _TopicScrollState extends State<TopicScroll> {
                     color: const Color(0xFFA9B489),
                   ),
                   child: const Text(
-                    'Pupuk',
-                    style: TextStyle(
-                      fontFamily: 'Lato',
-                      fontSize: 10,
-                      fontStyle: FontStyle.italic,
-                    ),
-                  ),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  padding: EdgeInsets.fromLTRB(15, 0, 15, 0),
-                  height: 30,
-                  alignment: Alignment.center,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.circular(15),
-                    color: const Color(0xFFA9B489),
-                  ),
-                  child: const Text(
-                    'Pupuk',
+                    'Cabai',
                     style: TextStyle(
                       fontFamily: 'Lato',
                       fontSize: 10,
@@ -199,7 +178,7 @@ class _TopicScrollState extends State<TopicScroll> {
                     color: const Color(0xFFA9B489),
                   ),
                   child: const Text(
-                    'Pupuk',
+                    'Hama',
                     style: TextStyle(
                       fontFamily: 'Lato',
                       fontSize: 10,

@@ -1,4 +1,4 @@
-import 'package:agrotalk/Pages/Admin%20Page/HomePage.dart';
+import 'HomePage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
@@ -29,15 +29,6 @@ class _NotificationUserPageState extends State<NotificationUserPage> {
         ),
         actions: [
           IconButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
-              icon: const Icon(
-                Icons.notifications,
-                color: Color(0xFF4F7D43),
-                size: 30,
-              )),
-          IconButton(
             onPressed: () {
               Navigator.push(
                 context,
@@ -47,7 +38,17 @@ class _NotificationUserPageState extends State<NotificationUserPage> {
               );
             },
             icon: const Icon(
-              Icons.account_circle_rounded,
+              Icons.search,
+              color: Color(0xFF4F7D43),
+              size: 30,
+            ),
+          ),
+          IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: const Icon(
+              Icons.notifications,
               color: Color(0xFF4F7D43),
               size: 30,
             ),

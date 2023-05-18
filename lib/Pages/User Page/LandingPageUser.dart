@@ -3,18 +3,24 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'HomePage.dart';
 import 'NotificationUserPage.dart';
+import 'NewsPage.dart';
+import 'ArticleUserPage.dart';
+import 'ProfileUserPage.dart';
 
-class LandingPage extends StatefulWidget {
-  const LandingPage({super.key});
+class LandingPageUser extends StatefulWidget {
+  const LandingPageUser({super.key});
 
   @override
-  State<LandingPage> createState() => _LandingPageState();
+  State<LandingPageUser> createState() => _LandingPageUserState();
 }
 
-class _LandingPageState extends State<LandingPage> {
+class _LandingPageUserState extends State<LandingPageUser> {
   int _bottomNavCurrentIndex = 0;
   List<Widget> _container = [
     new HomePage(),
+    new NewsPage(),
+    new ArticleUserPage(),
+    new ProfileUserPage(),
   ];
 
   @override
@@ -39,7 +45,7 @@ class _LandingPageState extends State<LandingPage> {
                 );
               },
               icon: const Icon(
-                Icons.notifications,
+                Icons.search,
                 color: Color(0xFF4F7D43),
                 size: 30,
               )),
@@ -48,12 +54,12 @@ class _LandingPageState extends State<LandingPage> {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => const HomePage(),
+                  builder: (context) => const NotificationUserPage(),
                 ),
               );
             },
             icon: const Icon(
-              Icons.account_circle_rounded,
+              Icons.notifications,
               color: Color(0xFF4F7D43),
               size: 30,
             ),
@@ -94,7 +100,7 @@ class _LandingPageState extends State<LandingPage> {
             ),
             BottomNavigationBarItem(
               icon: Icon(
-                Icons.report_rounded,
+                Icons.account_circle_rounded,
                 color: Color.fromARGB(255, 255, 255, 255),
               ),
               label: 'Report n Block',

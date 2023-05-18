@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import '../loginPage.dart';
+import '../registerPage.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'NotificationUserPage.dart';
+import 'LandingPageUser.dart';
 
 class ProfileUserPage extends StatefulWidget {
   const ProfileUserPage({super.key});
@@ -14,48 +15,6 @@ class _ProfileUserPageState extends State<ProfileUserPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        toolbarHeight: 60,
-        automaticallyImplyLeading: false,
-        backgroundColor: Colors.white,
-        title: IconButton(
-          icon: Icon(
-            Icons.arrow_back,
-            color: Color(0xFF4F7D43),
-            size: 30,
-          ),
-          onPressed: () {
-            Navigator.pop(context);
-          },
-        ),
-        actions: [
-          IconButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const NotificationUserPage(),
-                  ),
-                );
-              },
-              icon: const Icon(
-                Icons.notifications,
-                color: Color(0xFF4F7D43),
-                size: 30,
-              )),
-          IconButton(
-            onPressed: () {
-              Navigator.pop(context);
-            },
-            icon: const Icon(
-              Icons.account_circle_rounded,
-              color: Color(0xFF4F7D43),
-              size: 30,
-            ),
-            padding: EdgeInsets.fromLTRB(10, 0, 30, 0),
-          ),
-        ],
-      ),
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
@@ -72,10 +31,10 @@ class _ProfileUserPageState extends State<ProfileUserPage> {
               child: new Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(30.0),
+                    padding: const EdgeInsets.all(20.0),
                     child: CircleAvatar(
                       backgroundImage: AssetImage('assets/image/user1.jpg'),
-                      radius: 100.0,
+                      radius: 50.0,
                     ),
                   ),
                   Row(
@@ -83,27 +42,30 @@ class _ProfileUserPageState extends State<ProfileUserPage> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Text(
-                        "AgroTalk Admin",
+                        "ASEP SUNANDAR",
                         style: TextStyle(
-                            fontSize: 26,
+                            fontSize: 18,
                             color: Colors.black,
                             fontWeight: FontWeight.bold,
                             fontFamily: "Lato"),
                       ),
                     ],
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Text(
-                        "1234567899",
-                        style: TextStyle(
-                            fontSize: 20,
-                            color: Colors.black,
-                            fontFamily: "Lato"),
-                      ),
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.all(5.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Text(
+                          "Petani Kabupaten Bekasi, Jawa Barat",
+                          style: TextStyle(
+                              fontSize: 14,
+                              color: Colors.black,
+                              fontFamily: "Lato"),
+                        ),
+                      ],
+                    ),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(20.0),
@@ -112,8 +74,8 @@ class _ProfileUserPageState extends State<ProfileUserPage> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         MaterialButton(
-                          height: 50,
-                          minWidth: 130,
+                          height: 30,
+                          minWidth: 10,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20),
                           ),
@@ -121,7 +83,7 @@ class _ProfileUserPageState extends State<ProfileUserPage> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => const LoginPage(),
+                                builder: (context) => const RegisterPage(),
                               ),
                             );
                           },
@@ -131,7 +93,7 @@ class _ProfileUserPageState extends State<ProfileUserPage> {
                             'Keluar',
                             style: TextStyle(
                               fontFamily: 'Lato',
-                              fontSize: 24,
+                              fontSize: 14,
                             ),
                           ),
                         ),
