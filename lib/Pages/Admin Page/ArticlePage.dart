@@ -217,7 +217,7 @@ class _ArticlePageState extends State<ArticlePage> {
                                     children: [
                                       Text(
                                         "Budiman",
-                                        style: TextStyle(
+                                        style: const TextStyle(
                                             fontSize: 10,
                                             fontStyle: FontStyle.italic),
                                         textAlign: TextAlign.start,
