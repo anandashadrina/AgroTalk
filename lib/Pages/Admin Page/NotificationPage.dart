@@ -29,25 +29,11 @@ class _NotificationPageState extends State<NotificationPage> {
         ),
         actions: [
           IconButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
-              icon: const Icon(
-                Icons.notifications,
-                color: Color(0xFF4F7D43),
-                size: 30,
-              )),
-          IconButton(
             onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const ProfilePage(),
-                ),
-              );
+              Navigator.pop(context);
             },
             icon: const Icon(
-              Icons.account_circle_rounded,
+              Icons.notifications,
               color: Color(0xFF4F7D43),
               size: 30,
             ),

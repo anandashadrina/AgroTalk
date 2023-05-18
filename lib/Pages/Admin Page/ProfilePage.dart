@@ -31,20 +31,6 @@ class _ProfilePageState extends State<ProfilePage> {
         ),
         actions: [
           IconButton(
-              onPressed: () {
-                Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const NotificationPage(),
-                ),
-              );
-              },
-              icon: const Icon(
-                Icons.notifications,
-                color: Color(0xFF4F7D43),
-                size: 30,
-              )),
-          IconButton(
             onPressed: () {
               Navigator.pop(context);
             },
