@@ -2,14 +2,14 @@ import 'HomePage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-class NotificationUserPage extends StatefulWidget {
-  const NotificationUserPage({super.key});
+class SearchUserPage extends StatefulWidget {
+  const SearchUserPage({super.key});
 
   @override
-  State<NotificationUserPage> createState() => _NotificationUserPageState();
+  State<SearchUserPage> createState() => _SearchUserPageState();
 }
 
-class _NotificationUserPageState extends State<NotificationUserPage> {
+class _SearchUserPageState extends State<SearchUserPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,7 +33,7 @@ class _NotificationUserPageState extends State<NotificationUserPage> {
               Navigator.pop(context);
             },
             icon: const Icon(
-              Icons.notifications,
+              Icons.search,
               color: Color(0xFF4F7D43),
               size: 30,
             ),
