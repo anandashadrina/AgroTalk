@@ -141,7 +141,7 @@ class _NotificationUserPageState extends State<NotificationUserPage> {
                             ),
                           ),
                           Container(
-                            width: 280,
+                            width: 250,
                             child: Padding(
                               padding:
                                   EdgeInsets.only(left: 10, top: 15, right: 15),
@@ -159,7 +159,7 @@ class _NotificationUserPageState extends State<NotificationUserPage> {
                                   ),
                                   Expanded(
                                       child: Padding(
-                                    padding: EdgeInsets.only(top: 6),
+                                    padding: EdgeInsets.only(top: 6, right: 5),
                                     child: Text(
                                       "Ada upaya masuk yang mencurigakan ke akun Anda dari perangkat baru pada 21 Mei 2023. Tinjau Sekarang.",
                                       textAlign: TextAlign.justify,
