@@ -6,6 +6,7 @@ import 'NotificationUserPage.dart';
 import 'NewsPage.dart';
 import 'ArticleUserPage.dart';
 import 'ProfileUserPage.dart';
+import 'SearchUserPage.dart';
 
 class LandingPageUser extends StatefulWidget {
   const LandingPageUser({super.key});
@@ -40,7 +41,7 @@ class _LandingPageUserState extends State<LandingPageUser> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const NotificationUserPage(),
+                    builder: (context) => const SearchUserPage(),
                   ),
                 );
               },
@@ -89,21 +90,21 @@ class _LandingPageUserState extends State<LandingPageUser> {
                 Icons.newspaper,
                 color: Color.fromARGB(255, 255, 255, 255),
               ),
-              label: 'Artikel Page',
+              label: 'News',
             ),
             BottomNavigationBarItem(
               icon: Icon(
-                FontAwesomeIcons.trophy,
+                Icons.note_add_rounded,
                 color: Color.fromARGB(255, 255, 255, 255),
               ),
-              label: 'Popular Page',
+              label: 'Artikel User',
             ),
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.account_circle_rounded,
                 color: Color.fromARGB(255, 255, 255, 255),
               ),
-              label: 'Report n Block',
+              label: 'Profile',
             ),
           ],
           currentIndex: _bottomNavCurrentIndex,

@@ -30,21 +30,6 @@ class _NotificationUserPageState extends State<NotificationUserPage> {
         actions: [
           IconButton(
             onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const HomePage(),
-                ),
-              );
-            },
-            icon: const Icon(
-              Icons.search,
-              color: Color(0xFF4F7D43),
-              size: 30,
-            ),
-          ),
-          IconButton(
-            onPressed: () {
               Navigator.pop(context);
             },
             icon: const Icon(

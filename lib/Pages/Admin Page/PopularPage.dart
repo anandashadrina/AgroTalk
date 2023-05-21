@@ -101,164 +101,57 @@ class _PopularPageState extends State<PopularPage> {
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Expanded(
-                              flex: 5,
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Wrap(
                                     children: [
-                                      Padding(
-                                        padding: const EdgeInsets.only(
-                                            top: 20,
-                                            left: 15,
-                                            right: 15,
-                                            bottom: 10),
-                                        child: Text(
-                                          "Taman Bermain Di Tengah Lahan Kerap Membuat Petani Kesusahan Dalam Bekerja.",
-                                          style: TextStyle(
-                                            fontSize: 15,
-                                          ),
-                                          textAlign: TextAlign.start,
+                                      Text(
+                                        "Taman Bermain Di Tengah Lahan Kerap Membuat Petani Kesusahan Dalam Bekerja.",
+                                        style: TextStyle(
+                                          fontSize: 15,
                                         ),
+                                        textAlign: TextAlign.start,
                                       ),
-                                    ],
-                                  ),
-                                  Row(
-                                    children: [
-                                      Padding(
-                                        padding:
-                                            const EdgeInsets.only(left: 15),
-                                        child: Text(
-                                          "Asep Jawara",
-                                          style: TextStyle(
-                                              fontSize: 10,
-                                              fontStyle: FontStyle.italic),
-                                          textAlign: TextAlign.start,
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                  Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 15, top: 10),
-                                    child: Row(
-                                      mainAxisAlignment: MainAxisAlignment.end,
-                                      children: [
-                                        IconButton(
-                                          onPressed: () {},
-                                          icon: Icon(
-                                              Icons.remove_red_eye_outlined),
-                                          color: Colors.brown,
-                                        ),
-                                        Text(
-                                          "346k",
-                                          selectionColor: Colors.black,
-                                        ),
-                                        IconButton(
-                                            onPressed: () {},
-                                            icon: Icon(
-                                              Icons.eco_outlined,
-                                              color: const Color(0xFF4F7D43),
-                                            )),
-                                        Text(
-                                          "136k",
-                                          selectionColor: Colors.black,
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  // isi artikel popular mingguan
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(20, 5, 20, 5),
-                    child: Container(
-                      width: double.infinity,
-                      alignment: AlignmentDirectional.centerStart,
-                      decoration: const BoxDecoration(color: Color(0xFFA9B489)),
-                      child: Padding(
-                        padding: const EdgeInsets.all(10.0),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            Container(
-                              width: 352,
-                              child: Expanded(
-                                flex: 5,
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Wrap(
-                                      children: [
-                                        Padding(
-                                          padding: const EdgeInsets.only(
-                                              top: 20,
-                                              left: 15,
-                                              right: 15,
-                                              bottom: 10),
-                                          child: Text(
-                                            "Alat Sederhana Ini Membantu Kamu Untuk Cocok Tanam. Bisa Dibuat Sendiri, Loh! ",
-                                            style: TextStyle(
-                                              fontSize: 15,
-                                            ),
-                                            textAlign: TextAlign.start,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    Row(
-                                      children: [
-                                        Padding(
-                                          padding:
-                                              const EdgeInsets.only(left: 15),
-                                          child: Text(
-                                            "Karina Natasha",
+                                      Row(
+                                        children: [
+                                          Text(
+                                            "Asep Jawara",
                                             style: TextStyle(
                                                 fontSize: 10,
                                                 fontStyle: FontStyle.italic),
                                             textAlign: TextAlign.start,
                                           ),
-                                        )
-                                      ],
-                                    ),
-                                    Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 15, top: 10),
-                                      child: Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.end,
-                                        children: [
-                                          IconButton(
-                                            onPressed: () {},
-                                            icon: Icon(
-                                                Icons.remove_red_eye_outlined),
-                                            color: Colors.brown,
-                                          ),
-                                          Text(
-                                            "340k",
-                                            selectionColor: Colors.black,
-                                          ),
-                                          IconButton(
-                                              onPressed: () {},
-                                              icon: Icon(
-                                                Icons.eco_outlined,
-                                                color: const Color(0xFF4F7D43),
-                                              )),
-                                          Text(
-                                            "137k",
-                                            selectionColor: Colors.black,
-                                          ),
                                         ],
                                       ),
-                                    ),
-                                  ],
-                                ),
+                                    ],
+                                  ),
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.end,
+                                    children: [
+                                      IconButton(
+                                        onPressed: () {},
+                                        icon:
+                                            Icon(Icons.remove_red_eye_outlined),
+                                        color: Colors.brown,
+                                      ),
+                                      Text(
+                                        "346k",
+                                        selectionColor: Colors.black,
+                                      ),
+                                      IconButton(
+                                          onPressed: () {},
+                                          icon: Icon(
+                                            Icons.eco_outlined,
+                                            color: const Color(0xFF4F7D43),
+                                          )),
+                                      Text(
+                                        "136k",
+                                        selectionColor: Colors.black,
+                                      ),
+                                    ],
+                                  ),
+                                ],
                               ),
                             ),
                           ],
@@ -279,71 +172,55 @@ class _PopularPageState extends State<PopularPage> {
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Expanded(
-                              flex: 5,
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Wrap(
                                     children: [
-                                      Padding(
-                                        padding: const EdgeInsets.only(
-                                            top: 20,
-                                            left: 15,
-                                            right: 15,
-                                            bottom: 10),
-                                        child: Text(
-                                          "Cara Mengolah Kulit Pisang menjadi Pupuk Organik Yang Sehat Untuk Tanaman",
-                                          style: TextStyle(
-                                            fontSize: 15,
-                                          ),
-                                          textAlign: TextAlign.start,
+                                      Text(
+                                        "Alat Sederhana Ini Membantu Kamu Untuk Cocok Tanam. Bisa Dibuat Sendiri, Loh! ",
+                                        style: TextStyle(
+                                          fontSize: 15,
                                         ),
+                                        textAlign: TextAlign.start,
+                                      ),
+                                      Row(
+                                        children: [
+                                          Text(
+                                            "Karina Natasha",
+                                            style: TextStyle(
+                                                fontSize: 10,
+                                                fontStyle: FontStyle.italic),
+                                            textAlign: TextAlign.start,
+                                          ),
+                                        ],
                                       ),
                                     ],
                                   ),
                                   Row(
+                                    mainAxisAlignment: MainAxisAlignment.end,
                                     children: [
-                                      Padding(
-                                        padding:
-                                            const EdgeInsets.only(left: 15),
-                                        child: Text(
-                                          "Maulana Hidayah",
-                                          style: TextStyle(
-                                              fontSize: 10,
-                                              fontStyle: FontStyle.italic),
-                                          textAlign: TextAlign.start,
-                                        ),
-                                      )
-                                    ],
-                                  ),
-                                  Container(
-                                    padding: const EdgeInsets.only(
-                                        right: 15, top: 10),
-                                    child: Row(
-                                      mainAxisAlignment: MainAxisAlignment.end,
-                                      children: [
-                                        IconButton(
+                                      IconButton(
+                                        onPressed: () {},
+                                        icon:
+                                            Icon(Icons.remove_red_eye_outlined),
+                                        color: Colors.brown,
+                                      ),
+                                      Text(
+                                        "340k",
+                                        selectionColor: Colors.black,
+                                      ),
+                                      IconButton(
                                           onPressed: () {},
                                           icon: Icon(
-                                              Icons.remove_red_eye_outlined),
-                                          color: Colors.brown,
-                                        ),
-                                        Text(
-                                          "339k",
-                                          selectionColor: Colors.black,
-                                        ),
-                                        IconButton(
-                                            onPressed: () {},
-                                            icon: Icon(
-                                              Icons.eco_outlined,
-                                              color: const Color(0xFF4F7D43),
-                                            )),
-                                        Text(
-                                          "128k",
-                                          selectionColor: Colors.black,
-                                        ),
-                                      ],
-                                    ),
+                                            Icons.eco_outlined,
+                                            color: const Color(0xFF4F7D43),
+                                          )),
+                                      Text(
+                                        "137k",
+                                        selectionColor: Colors.black,
+                                      ),
+                                    ],
                                   ),
                                 ],
                               ),
@@ -365,78 +242,129 @@ class _PopularPageState extends State<PopularPage> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
-                            Container(
-                              width: 352,
-                              child: Expanded(
-                                flex: 5,
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Wrap(
-                                      children: [
-                                        Padding(
-                                          padding: const EdgeInsets.only(
-                                              top: 20,
-                                              left: 15,
-                                              right: 15,
-                                              bottom: 10),
-                                          child: Text(
-                                            "Menghilangkan Kutu Daun dan Hama Lainnya Menggunakan Cabe?!",
-                                            style: TextStyle(
-                                              fontSize: 15,
-                                            ),
-                                            textAlign: TextAlign.start,
-                                          ),
+                            Expanded(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Wrap(
+                                    children: [
+                                      Text(
+                                        "Cara Mengolah Kulit Pisang menjadi Pupuk Organik Yang Sehat Untuk Tanaman",
+                                        style: TextStyle(
+                                          fontSize: 15,
                                         ),
-                                      ],
-                                    ),
-                                    Row(
-                                      children: [
-                                        Padding(
-                                          padding:
-                                              const EdgeInsets.only(left: 15),
-                                          child: Text(
+                                        textAlign: TextAlign.start,
+                                      ),
+                                      Row(
+                                        children: [
+                                          Text(
+                                            "Maulana Hidayah",
+                                            style: TextStyle(
+                                                fontSize: 10,
+                                                fontStyle: FontStyle.italic),
+                                            textAlign: TextAlign.start,
+                                          )
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.end,
+                                    children: [
+                                      IconButton(
+                                        onPressed: () {},
+                                        icon:
+                                            Icon(Icons.remove_red_eye_outlined),
+                                        color: Colors.brown,
+                                      ),
+                                      Text(
+                                        "339k",
+                                        selectionColor: Colors.black,
+                                      ),
+                                      IconButton(
+                                          onPressed: () {},
+                                          icon: Icon(
+                                            Icons.eco_outlined,
+                                            color: const Color(0xFF4F7D43),
+                                          )),
+                                      Text(
+                                        "128k",
+                                        selectionColor: Colors.black,
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  // isi artikel popular mingguan
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(20, 5, 20, 5),
+                    child: Container(
+                      width: double.infinity,
+                      alignment: AlignmentDirectional.centerStart,
+                      decoration: const BoxDecoration(color: Color(0xFFA9B489)),
+                      child: Padding(
+                        padding: const EdgeInsets.all(10.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Expanded(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Wrap(
+                                    children: [
+                                      Text(
+                                        "Menghilangkan Kutu Daun dan Hama Lainnya Menggunakan Cabe?!",
+                                        style: TextStyle(
+                                          fontSize: 15,
+                                        ),
+                                        textAlign: TextAlign.start,
+                                      ),
+                                      Row(
+                                        children: [
+                                          Text(
                                             "Dina OhDina",
                                             style: TextStyle(
                                                 fontSize: 10,
                                                 fontStyle: FontStyle.italic),
                                             textAlign: TextAlign.start,
-                                          ),
-                                        )
-                                      ],
-                                    ),
-                                    Container(
-                                      padding: const EdgeInsets.only(
-                                          right: 15, top: 10),
-                                      child: Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.end,
-                                        children: [
-                                          IconButton(
-                                            onPressed: () {},
-                                            icon: Icon(
-                                                Icons.remove_red_eye_outlined),
-                                            color: Colors.brown,
-                                          ),
-                                          Text(
-                                            "336k",
-                                            selectionColor: Colors.black,
-                                          ),
-                                          IconButton(
-                                              onPressed: () {},
-                                              icon: Icon(
-                                                Icons.eco_outlined,
-                                                color: const Color(0xFF4F7D43),
-                                              )),
-                                          Text(
-                                            "120k",
-                                            selectionColor: Colors.black,
-                                          ),
+                                          )
                                         ],
                                       ),
-                                    ),
-                                  ],
-                                ),
+                                    ],
+                                  ),
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.end,
+                                    children: [
+                                      IconButton(
+                                        onPressed: () {},
+                                        icon:
+                                            Icon(Icons.remove_red_eye_outlined),
+                                        color: Colors.brown,
+                                      ),
+                                      Text(
+                                        "336k",
+                                        selectionColor: Colors.black,
+                                      ),
+                                      IconButton(
+                                          onPressed: () {},
+                                          icon: Icon(
+                                            Icons.eco_outlined,
+                                            color: const Color(0xFF4F7D43),
+                                          )),
+                                      Text(
+                                        "120k",
+                                        selectionColor: Colors.black,
+                                      ),
+                                    ],
+                                  ),
+                                ],
                               ),
                             ),
                           ],
