@@ -37,7 +37,7 @@ class _AddTopicPageState extends State<AddTopicPage> {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => const HomePage(),
+                  builder: (context) => const LandingPage(),
                 ),
               );
             },
