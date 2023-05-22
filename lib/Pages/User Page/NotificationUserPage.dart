@@ -20,7 +20,7 @@ class _NotificationUserPageState extends State<NotificationUserPage> {
         title: IconButton(
           icon: Icon(
             Icons.arrow_back,
-            color: Color(0xFF4F7D43),
+            color: const Color(0xFF4F7D43),
             size: 30,
           ),
           onPressed: () {
@@ -37,7 +37,7 @@ class _NotificationUserPageState extends State<NotificationUserPage> {
               color: Color(0xFF4F7D43),
               size: 30,
             ),
-            padding: EdgeInsets.fromLTRB(10, 0, 30, 0),
+            padding: const EdgeInsets.fromLTRB(10, 0, 30, 0),
           ),
         ],
       ),
@@ -51,27 +51,83 @@ class _NotificationUserPageState extends State<NotificationUserPage> {
                 children: [
                   // isi notifikasi
                   Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 5),
+                    padding: const EdgeInsets.symmetric(vertical: 9),
                     child: Container(
-                      width: 400,
-                      height: 130,
                       decoration: BoxDecoration(
                         color: Colors.white,
                         boxShadow: [
                           BoxShadow(
                               color: Colors.grey,
-                              spreadRadius: 3,
-                              blurRadius: 10,
+                              spreadRadius: 2,
+                              blurRadius: 5,
+                              offset: Offset(0, 3))
+                        ],
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Expanded(
+                            flex: 1,
+                            child: Icon(
+                              Icons.warning_outlined,
+                              size: 50,
+                              color: Colors.redAccent,
+                            ),
+                          ),
+                          Expanded(
+                            flex: 4,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Text(
+                                  "Segera Tindak Lanjuti!",
+                                  style: TextStyle(
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: 'lato',
+                                  ),
+                                ),
+                                Wrap(
+                                  children: [
+                                    Text(
+                                      "Ada upaya masuk yang mencurigakan ke akun Anda dari perangkat baru pada 15 Maret 2023. Tinjau Sekarang.",
+                                      textAlign: TextAlign.justify,
+                                      style: TextStyle(
+                                          fontSize: 12,
+                                          fontFamily: 'lato',
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
+                      padding: EdgeInsets.all(10),
+                    ),
+                  ),
+                  // isi notifikasi
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 5),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                              color: Colors.grey,
+                              spreadRadius: 2,
+                              blurRadius: 5,
                               offset: Offset(0, 3))
                         ],
                       ),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          //isi notif
                           Padding(
-                            padding: const EdgeInsets.symmetric(
-                                horizontal: 20, vertical: 20),
+                            padding: const EdgeInsets.all(20),
                             child: Row(
                               children: [
                                 Container(
@@ -94,83 +150,84 @@ class _NotificationUserPageState extends State<NotificationUserPage> {
                             ),
                           ),
                           Container(
-                            width: 360,
+                            padding: EdgeInsets.only(
+                                left: 20, bottom: 10, right: 20),
                             child: Expanded(
-                                child: Padding(
-                              padding: EdgeInsets.only(
-                                  left: 20, bottom: 10, right: 20),
-                              child: Text(
-                                "Idris dan Ibnu menyukai komentar Anda 'Selama perawatan dilakukan dengan baik seharusnya sudah...'",
-                                textAlign: TextAlign.justify,
-                                style: TextStyle(
-                                    fontSize: 12,
-                                    fontFamily: 'lato',
-                                    fontWeight: FontWeight.bold),
+                              child: Column(
+                                children: [
+                                  Wrap(
+                                    children: [
+                                      Text(
+                                        "Aida Sukitama, Gita M. Riyadhi, dan 115 pengguna lainnya mengirimkan permintaan unggah artikel. Lihat Sekarang.",
+                                        textAlign: TextAlign.justify,
+                                        style: TextStyle(
+                                            fontSize: 12,
+                                            fontFamily: 'lato',
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                    ],
+                                  ),
+                                ],
                               ),
-                            )),
+                            ),
                           ),
                         ],
                       ),
                     ),
                   ),
-                  //isi notifikasi
-                    Padding(
+                  // isi notifikasi
+                  Padding(
                     padding: const EdgeInsets.symmetric(vertical: 9),
                     child: Container(
-                      width: 400,
-                      height: 120,
                       decoration: BoxDecoration(
                         color: Colors.white,
                         boxShadow: [
                           BoxShadow(
                               color: Colors.grey,
-                              spreadRadius: 3,
-                              blurRadius: 10,
+                              spreadRadius: 2,
+                              blurRadius: 5,
                               offset: Offset(0, 3))
                         ],
                       ),
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          Container(
-                            padding: EdgeInsets.symmetric(horizontal: 10),
-                            alignment: Alignment.center,
+                          Expanded(
+                            flex: 1,
                             child: Icon(
-                              Icons.warning_outlined,
-                              size: 50,
-                              color: Color.fromARGB(255, 251, 245, 73),
+                              Icons.report_outlined,
+                              size: 60,
+                              color: const Color(0xFF4F7D43),
                             ),
                           ),
-                          Container(
-                            width: 250,
-                            child: Padding(
-                              padding:
-                                  EdgeInsets.only(left: 10, top: 15, right: 15),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                children: [
-                                  Text(
-                                    "Upaya Login Akun Anda",
-                                    style: TextStyle(
-                                      fontSize: 15,
-                                      fontWeight: FontWeight.bold,
-                                      fontFamily: 'lato',
-                                    ),
+                          Expanded(
+                            flex: 4,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Text(
+                                  "Periksa Sekarang!",
+                                  style: TextStyle(
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: 'lato',
                                   ),
-                                  Expanded(
-                                      child: Padding(
-                                    padding: EdgeInsets.only(top: 6, right: 5),
-                                    child: Text(
-                                      "Ada upaya masuk yang mencurigakan ke akun Anda dari perangkat baru pada 21 Mei 2023. Tinjau Sekarang.",
+                                ),
+                                Wrap(
+                                  children: [
+                                    Text(
+                                      "Ada sebanyak 250 laporan groker yang belum diperiksa. Lakukan pemerikasaan sekarang.",
                                       textAlign: TextAlign.justify,
                                       style: TextStyle(
                                           fontSize: 12,
                                           fontFamily: 'lato',
                                           fontWeight: FontWeight.bold),
                                     ),
-                                  ))
-                                ],
-                              ),
+                                  ],
+                                ),
+                              ],
                             ),
                           )
                         ],
@@ -178,12 +235,324 @@ class _NotificationUserPageState extends State<NotificationUserPage> {
                       padding: EdgeInsets.all(10),
                     ),
                   ),
+                  // isi notifikasi
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 5),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                              color: Colors.grey,
+                              spreadRadius: 2,
+                              blurRadius: 5,
+                              offset: Offset(0, 3))
+                        ],
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(20),
+                            child: Row(
+                              children: [
+                                Container(
+                                  padding: const EdgeInsets.only(right: 3),
+                                  child: const CircleAvatar(
+                                    radius: 20,
+                                    backgroundImage:
+                                        AssetImage('assets/image/user3.jpg'),
+                                  ),
+                                ),
+                                Container(
+                                  padding: const EdgeInsets.only(left: 3),
+                                  child: const CircleAvatar(
+                                    radius: 20,
+                                    backgroundImage:
+                                        AssetImage('assets/image/user2.jpg'),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            padding: EdgeInsets.only(
+                                left: 20, bottom: 10, right: 20),
+                            child: Expanded(
+                              child: Column(
+                                children: [
+                                  Wrap(
+                                    children: [
+                                      Text(
+                                        "Howard, Lia Azzahra, dan 3 pengguna lainnya mengirimkan permintaan laporan pengguna. Periksa Sekarang. ",
+                                        textAlign: TextAlign.justify,
+                                        style: TextStyle(
+                                            fontSize: 12,
+                                            fontFamily: 'lato',
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  //isi notifikasi
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 9),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                              color: Colors.grey,
+                              spreadRadius: 2,
+                              blurRadius: 5,
+                              offset: Offset(0, 3))
+                        ],
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Expanded(
+                            flex: 1,
+                            child: Icon(
+                              Icons.warning_outlined,
+                              size: 50,
+                              color: Colors.redAccent,
+                            ),
+                          ),
+                          Expanded(
+                            flex: 4,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Text(
+                                  "Segera Tindak Lanjuti!",
+                                  style: TextStyle(
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: 'lato',
+                                  ),
+                                ),
+                                Wrap(
+                                  children: [
+                                    Text(
+                                      "Ada upaya masuk yang mencurigakan ke akun Anda dari perangkat baru pada 15 Maret 2023. Tinjau Sekarang.",
+                                      textAlign: TextAlign.justify,
+                                      style: TextStyle(
+                                          fontSize: 12,
+                                          fontFamily: 'lato',
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
+                      padding: EdgeInsets.all(10),
+                    ),
+                  ),
+                  //isi notifikasi
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 9),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                              color: Colors.grey,
+                              spreadRadius: 2,
+                              blurRadius: 5,
+                              offset: Offset(0, 3))
+                        ],
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Expanded(
+                            flex: 1,
+                            child: Icon(
+                              Icons.warning_outlined,
+                              size: 50,
+                              color: Colors.redAccent,
+                            ),
+                          ),
+                          Expanded(
+                            flex: 4,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Text(
+                                  "Segera Tindak Lanjuti!",
+                                  style: TextStyle(
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: 'lato',
+                                  ),
+                                ),
+                                Wrap(
+                                  children: [
+                                    Text(
+                                      "Ada upaya masuk yang mencurigakan ke akun Anda dari perangkat baru pada 15 Maret 2023. Tinjau Sekarang.",
+                                      textAlign: TextAlign.justify,
+                                      style: TextStyle(
+                                          fontSize: 12,
+                                          fontFamily: 'lato',
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
+                      padding: EdgeInsets.all(10),
+                    ),
+                  ),
+                  //isi notifikasi
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 9),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                              color: Colors.grey,
+                              spreadRadius: 2,
+                              blurRadius: 5,
+                              offset: Offset(0, 3))
+                        ],
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Expanded(
+                            flex: 1,
+                            child: Icon(
+                              Icons.report_outlined,
+                              size: 60,
+                              color: const Color(0xFF4F7D43),
+                            ),
+                          ),
+                          Expanded(
+                            flex: 4,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Text(
+                                  "Periksa Sekarang!",
+                                  style: TextStyle(
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: 'lato',
+                                  ),
+                                ),
+                                Wrap(
+                                  children: [
+                                    Text(
+                                      "Ada sebanyak 250 laporan groker yang belum diperiksa. Lakukan pemerikasaan sekarang.",
+                                      textAlign: TextAlign.justify,
+                                      style: TextStyle(
+                                          fontSize: 12,
+                                          fontFamily: 'lato',
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
+                      padding: EdgeInsets.all(10),
+                    ),
+                  ),
+                  // isi notifikasi
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 5),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                              color: Colors.grey,
+                              spreadRadius: 2,
+                              blurRadius: 5,
+                              offset: Offset(0, 3))
+                        ],
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(20),
+                            child: Row(
+                              children: [
+                                Container(
+                                  padding: const EdgeInsets.only(right: 3),
+                                  child: const CircleAvatar(
+                                    radius: 20,
+                                    backgroundImage:
+                                        AssetImage('assets/image/user3.jpg'),
+                                  ),
+                                ),
+                                Container(
+                                  padding: const EdgeInsets.only(left: 3),
+                                  child: const CircleAvatar(
+                                    radius: 20,
+                                    backgroundImage:
+                                        AssetImage('assets/image/user2.jpg'),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            padding: EdgeInsets.only(
+                                left: 20, bottom: 10, right: 20),
+                            child: Expanded(
+                              child: Column(
+                                children: [
+                                  Wrap(
+                                    children: [
+                                      Text(
+                                        "Howard, Lia Azzahra, dan 3 pengguna lainnya mengirimkan permintaan laporan pengguna. Periksa Sekarang. ",
+                                        textAlign: TextAlign.justify,
+                                        style: TextStyle(
+                                            fontSize: 12,
+                                            fontFamily: 'lato',
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
-          )
-        ]
-      ,)
-    ); 
+          ),
+        ],
+      ),
+    );
   }
 }

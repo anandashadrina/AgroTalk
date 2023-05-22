@@ -87,7 +87,7 @@ class _LandingPageState extends State<LandingPage> {
             ),
             BottomNavigationBarItem(
               icon: Icon(
-                Icons.newspaper,
+                Icons.my_library_books,
                 color: Color.fromARGB(255, 255, 255, 255),
               ),
               label: 'Artikel Page',

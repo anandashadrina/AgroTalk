@@ -90,11 +90,11 @@ class _LandingPageUserState extends State<LandingPageUser> {
                 Icons.newspaper,
                 color: Color.fromARGB(255, 255, 255, 255),
               ),
-              label: 'News',
+              label: 'News Page',
             ),
             BottomNavigationBarItem(
               icon: Icon(
-                Icons.note_add_rounded,
+                Icons.my_library_books,
                 color: Color.fromARGB(255, 255, 255, 255),
               ),
               label: 'Artikel User',
