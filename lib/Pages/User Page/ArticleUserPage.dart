@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class ArticleUserPage extends StatefulWidget {
   const ArticleUserPage({super.key});
@@ -52,7 +53,7 @@ class _ArticleUserPageState extends State<ArticleUserPage> {
                       alignment: AlignmentDirectional.centerStart,
                       decoration: const BoxDecoration(color: Color(0xFFA9B489)),
                       child: Padding(
-                        padding: const EdgeInsets.all(10.0),
+                        padding: const EdgeInsets.fromLTRB(10, 10, 10, 5),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
@@ -64,426 +65,301 @@ class _ArticleUserPageState extends State<ArticleUserPage> {
                                   Wrap(
                                     children: [
                                       Text(
-                                        "Jangan Disingkirkan! Ini 5 Manfaat Cacing Tanah Untuk Kebunmu.",
+                                        "Meningkatkan Produktivitas Tanaman dengan Teknologi Pertanian Terbaru",
                                         style: TextStyle(
-                                          fontSize: 12,
+                                          fontSize: 14,
+                                          fontFamily: "LatoBold",
                                         ),
                                         textAlign: TextAlign.start,
                                       ),
                                     ],
                                   ),
-                                  Row(
-                                    children: [
-                                      Text(
-                                        "Budiman",
-                                        style: TextStyle(
-                                            fontSize: 10,
-                                            fontStyle: FontStyle.italic),
-                                        textAlign: TextAlign.start,
-                                      )
-                                    ],
-                                  ),
-                                  Row(
-                                    mainAxisAlignment: MainAxisAlignment.end,
-                                    children: [
-                                      RichText(
-                                        text: TextSpan(
-                                            text: 'Cek Artikel Lengkap',
-                                            style: TextStyle(
-                                              fontSize: 10,
-                                              color: Color.fromARGB(
-                                                  255, 6, 95, 167),
-                                            ),
-                                            recognizer: TapGestureRecognizer()
-                                              ..onTap = () async {}),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Expanded(
-                              flex: 1,
-                              child: Padding(
-                                padding: const EdgeInsets.fromLTRB(
-                                    8.0, 0, 15.0, 6.0),
-                                child: Column(
-                                  children: [
-                                    IconButton(
-                                      onPressed: () {},
-                                      icon: Icon(
-                                        Icons.check_circle_outline,
-                                        color: Color(0xFF4F7D43),
-                                        size: 25,
-                                      ),
-                                    ),
-                                    IconButton(
-                                      onPressed: () {},
-                                      icon: Icon(
-                                        Icons.cancel_outlined,
-                                        color: Color.fromARGB(255, 147, 13, 13),
-                                        size: 25,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(20, 5, 20, 5),
-                    child: Container(
-                      width: double.infinity,
-                      alignment: AlignmentDirectional.centerStart,
-                      decoration: const BoxDecoration(color: Color(0xFFA9B489)),
-                      child: Padding(
-                        padding: const EdgeInsets.all(10.0),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            Expanded(
-                              flex: 5,
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Wrap(
-                                    children: [
-                                      Text(
-                                        "Jangan Disingkirkan! Ini 5 Manfaat Cacing Tanah Untuk Kebunmu.",
-                                        style: TextStyle(
-                                          fontSize: 12,
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 5),
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.end,
+                                      children: [
+                                        RichText(
+                                          text: TextSpan(
+                                              text: 'Cek Artikel Lengkap',
+                                              style: TextStyle(
+                                                fontSize: 10,
+                                                color: Color.fromARGB(
+                                                    255, 6, 95, 167),
+                                              ),
+                                              recognizer: TapGestureRecognizer()
+                                                ..onTap = () async {}),
                                         ),
-                                        textAlign: TextAlign.start,
-                                      ),
-                                    ],
-                                  ),
-                                  Row(
-                                    children: [
-                                      Text(
-                                        "Budiman",
-                                        style: const TextStyle(
-                                            fontSize: 10,
-                                            fontStyle: FontStyle.italic),
-                                        textAlign: TextAlign.start,
-                                      )
-                                    ],
+                                      ],
+                                    ),
                                   ),
                                   Row(
                                     mainAxisAlignment: MainAxisAlignment.end,
                                     children: [
-                                      RichText(
-                                        text: TextSpan(
-                                            text: 'Cek Artikel Lengkap',
-                                            style: TextStyle(
-                                              fontSize: 10,
-                                              color: Color.fromARGB(
-                                                  255, 6, 95, 167),
-                                            ),
-                                            recognizer: TapGestureRecognizer()
-                                              ..onTap = () async {}),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Expanded(
-                              flex: 1,
-                              child: Padding(
-                                padding: const EdgeInsets.fromLTRB(
-                                    8.0, 0, 15.0, 6.0),
-                                child: Column(
-                                  children: [
-                                    IconButton(
-                                      onPressed: () {},
-                                      icon: Icon(
-                                        Icons.check_circle_outline,
-                                        color: Color(0xFF4F7D43),
-                                        size: 25,
-                                      ),
-                                    ),
-                                    IconButton(
-                                      onPressed: () {},
-                                      icon: Icon(
-                                        Icons.cancel_outlined,
-                                        color: Color.fromARGB(255, 147, 13, 13),
-                                        size: 25,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(20, 5, 20, 5),
-                    child: Container(
-                      width: double.infinity,
-                      alignment: AlignmentDirectional.centerStart,
-                      decoration: const BoxDecoration(color: Color(0xFFA9B489)),
-                      child: Padding(
-                        padding: const EdgeInsets.all(10.0),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            Expanded(
-                              flex: 5,
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Wrap(
-                                    children: [
-                                      Text(
-                                        "Jangan Disingkirkan! Ini 5 Manfaat Cacing Tanah Untuk Kebunmu.",
-                                        style: TextStyle(
-                                          fontSize: 12,
+                                      IconButton(
+                                        splashRadius: 0.0001,
+                                        padding: EdgeInsets.zero,
+                                        constraints: const BoxConstraints(
+                                            minWidth: 15, maxWidth: 15),
+                                        onPressed: () {},
+                                        icon: Icon(
+                                          FontAwesomeIcons.eye,
+                                          color:
+                                              Color.fromARGB(255, 120, 62, 25),
+                                          size: 15,
                                         ),
-                                        textAlign: TextAlign.start,
                                       ),
-                                    ],
-                                  ),
-                                  Row(
-                                    children: [
-                                      Text(
-                                        "Budiman",
-                                        style: TextStyle(
-                                            fontSize: 10,
-                                            fontStyle: FontStyle.italic),
-                                        textAlign: TextAlign.start,
-                                      )
-                                    ],
-                                  ),
-                                  Row(
-                                    mainAxisAlignment: MainAxisAlignment.end,
-                                    children: [
-                                      RichText(
-                                        text: TextSpan(
-                                            text: 'Cek Artikel Lengkap',
-                                            style: TextStyle(
-                                              fontSize: 10,
-                                              color: Color.fromARGB(
-                                                  255, 6, 95, 167),
-                                            ),
-                                            recognizer: TapGestureRecognizer()
-                                              ..onTap = () async {}),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Expanded(
-                              flex: 1,
-                              child: Padding(
-                                padding: const EdgeInsets.fromLTRB(
-                                    8.0, 0, 15.0, 6.0),
-                                child: Column(
-                                  children: [
-                                    IconButton(
-                                      onPressed: () {},
-                                      icon: Icon(
-                                        Icons.check_circle_outline,
-                                        color: Color(0xFF4F7D43),
-                                        size: 25,
-                                      ),
-                                    ),
-                                    IconButton(
-                                      onPressed: () {},
-                                      icon: Icon(
-                                        Icons.cancel_outlined,
-                                        color: Color.fromARGB(255, 147, 13, 13),
-                                        size: 25,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(20, 5, 20, 5),
-                    child: Container(
-                      width: double.infinity,
-                      alignment: AlignmentDirectional.centerStart,
-                      decoration: const BoxDecoration(color: Color(0xFFA9B489)),
-                      child: Padding(
-                        padding: const EdgeInsets.all(10.0),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            Expanded(
-                              flex: 5,
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Wrap(
-                                    children: [
-                                      Text(
-                                        "Jangan Disingkirkan! Ini 5 Manfaat Cacing Tanah Untuk Kebunmu.",
-                                        style: TextStyle(
-                                          fontSize: 12,
-                                        ),
-                                        textAlign: TextAlign.start,
-                                      ),
-                                    ],
-                                  ),
-                                  Row(
-                                    children: [
-                                      Text(
-                                        "Budiman",
-                                        style: TextStyle(
-                                            fontSize: 10,
-                                            fontStyle: FontStyle.italic),
-                                        textAlign: TextAlign.start,
-                                      )
-                                    ],
-                                  ),
-                                  Row(
-                                    mainAxisAlignment: MainAxisAlignment.end,
-                                    children: [
-                                      RichText(
-                                        text: TextSpan(
-                                            text: 'Cek Artikel Lengkap',
-                                            style: TextStyle(
-                                              fontSize: 10,
-                                              color: Color.fromARGB(
-                                                  255, 6, 95, 167),
-                                            ),
-                                            recognizer: TapGestureRecognizer()
-                                              ..onTap = () async {}),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Expanded(
-                              flex: 1,
-                              child: Padding(
-                                padding: const EdgeInsets.fromLTRB(
-                                    8.0, 0, 15.0, 6.0),
-                                child: Column(
-                                  children: [
-                                    IconButton(
-                                      onPressed: () {},
-                                      icon: Icon(
-                                        Icons.check_circle_outline,
-                                        color: Color(0xFF4F7D43),
-                                        size: 25,
-                                      ),
-                                    ),
-                                    IconButton(
-                                      onPressed: () {},
-                                      icon: Icon(
-                                        Icons.cancel_outlined,
-                                        color: Color.fromARGB(255, 147, 13, 13),
-                                        size: 25,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(20, 5, 20, 5),
-                    child: Container(
-                      width: double.infinity,
-                      alignment: AlignmentDirectional.centerStart,
-                      decoration: const BoxDecoration(color: Color(0xFFA9B489)),
-                      child: Padding(
-                        padding: const EdgeInsets.all(10.0),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            Expanded(
-                              flex: 5,
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Wrap(
-                                    children: [
-                                      Text(
-                                        "Jangan Disingkirkan! Ini 5 Manfaat Cacing Tanah Untuk Kebunmu.",
-                                        style: TextStyle(
-                                          fontSize: 12,
-                                        ),
-                                        textAlign: TextAlign.start,
-                                      ),
-                                    ],
-                                  ),
-                                  Row(
-                                    children: [
-                                      Text(
-                                        "Budiman",
-                                        style: TextStyle(
-                                            fontSize: 10,
-                                            fontStyle: FontStyle.italic),
-                                        textAlign: TextAlign.start,
-                                      )
-                                    ],
-                                  ),
-                                  Row(
-                                    mainAxisAlignment: MainAxisAlignment.end,
-                                    children: [
-                                      RichText(
-                                        text: TextSpan(
-                                          text: 'Cek Artikel Lengkap',
+                                      Padding(
+                                        padding: const EdgeInsets.only(
+                                            left: 5, right: 5),
+                                        child: Text(
+                                          "200",
                                           style: TextStyle(
-                                            fontSize: 10,
-                                            color:
-                                                Color.fromARGB(255, 6, 95, 167),
+                                            fontFamily: "Lato",
+                                            fontSize: 11,
                                           ),
-                                          recognizer: TapGestureRecognizer()
-                                            ..onTap = () {},
                                         ),
                                       ),
+                                      IconButton(
+                                        splashRadius: 0.0001,
+                                        padding: EdgeInsets.zero,
+                                        constraints: const BoxConstraints(
+                                            minWidth: 15, maxWidth: 15),
+                                        onPressed: () {},
+                                        icon: Icon(
+                                          FontAwesomeIcons.leaf,
+                                          color:
+                                              Color.fromARGB(255, 79, 125, 67),
+                                          size: 15,
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.only(left: 5),
+                                        child: Text(
+                                          "150",
+                                          style: TextStyle(
+                                            fontFamily: "Lato",
+                                            fontSize: 11,
+                                          ),
+                                        ),
+                                      )
                                     ],
                                   ),
                                 ],
                               ),
                             ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(20, 5, 20, 5),
+                    child: Container(
+                      width: double.infinity,
+                      alignment: AlignmentDirectional.centerStart,
+                      decoration: const BoxDecoration(color: Color(0xFFA9B489)),
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(10, 10, 10, 5),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
                             Expanded(
-                              flex: 1,
-                              child: Padding(
-                                padding: const EdgeInsets.fromLTRB(
-                                    8.0, 0, 15.0, 6.0),
-                                child: Column(
-                                  children: [
-                                    IconButton(
-                                      onPressed: () {},
-                                      icon: Icon(
-                                        Icons.check_circle_outline,
-                                        color: Color(0xFF4F7D43),
-                                        size: 25,
+                              flex: 5,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Wrap(
+                                    children: [
+                                      Text(
+                                        "Menjaga Kualitas Air melalui Pengelolaan Pertanian yang Berkelanjutan",
+                                        style: TextStyle(
+                                          fontSize: 14,
+                                          fontFamily: "LatoBold",
+                                        ),
+                                        textAlign: TextAlign.start,
                                       ),
+                                    ],
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 5),
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.end,
+                                      children: [
+                                        RichText(
+                                          text: TextSpan(
+                                              text: 'Cek Artikel Lengkap',
+                                              style: TextStyle(
+                                                fontSize: 10,
+                                                color: Color.fromARGB(
+                                                    255, 6, 95, 167),
+                                              ),
+                                              recognizer: TapGestureRecognizer()
+                                                ..onTap = () async {}),
+                                        ),
+                                      ],
                                     ),
-                                    IconButton(
-                                      onPressed: () {},
-                                      icon: Icon(
-                                        Icons.cancel_outlined,
-                                        color: Color.fromARGB(255, 147, 13, 13),
-                                        size: 25,
+                                  ),
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.end,
+                                    children: [
+                                      IconButton(
+                                        splashRadius: 0.0001,
+                                        padding: EdgeInsets.zero,
+                                        constraints: const BoxConstraints(
+                                            minWidth: 15, maxWidth: 15),
+                                        onPressed: () {},
+                                        icon: Icon(
+                                          FontAwesomeIcons.eye,
+                                          color:
+                                              Color.fromARGB(255, 120, 62, 25),
+                                          size: 15,
+                                        ),
                                       ),
+                                      Padding(
+                                        padding: const EdgeInsets.only(
+                                            left: 5, right: 5),
+                                        child: Text(
+                                          "350",
+                                          style: TextStyle(
+                                            fontFamily: "Lato",
+                                            fontSize: 11,
+                                          ),
+                                        ),
+                                      ),
+                                      IconButton(
+                                        splashRadius: 0.0001,
+                                        padding: EdgeInsets.zero,
+                                        constraints: const BoxConstraints(
+                                            minWidth: 15, maxWidth: 15),
+                                        onPressed: () {},
+                                        icon: Icon(
+                                          FontAwesomeIcons.leaf,
+                                          color:
+                                              Color.fromARGB(255, 79, 125, 67),
+                                          size: 15,
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.only(left: 5),
+                                        child: Text(
+                                          "200",
+                                          style: TextStyle(
+                                            fontFamily: "Lato",
+                                            fontSize: 11,
+                                          ),
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(20, 5, 20, 5),
+                    child: Container(
+                      width: double.infinity,
+                      alignment: AlignmentDirectional.centerStart,
+                      decoration: const BoxDecoration(color: Color(0xFFA9B489)),
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(10, 10, 10, 5),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Expanded(
+                              flex: 5,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Wrap(
+                                    children: [
+                                      Text(
+                                        "Ini Cara Membuat Pupuk Organik Menggunakan Kulit Bawang!",
+                                        style: TextStyle(
+                                          fontSize: 14,
+                                          fontFamily: "LatoBold",
+                                        ),
+                                        textAlign: TextAlign.start,
+                                      ),
+                                    ],
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 5),
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.end,
+                                      children: [
+                                        RichText(
+                                          text: TextSpan(
+                                              text: 'Cek Artikel Lengkap',
+                                              style: TextStyle(
+                                                fontSize: 10,
+                                                color: Color.fromARGB(
+                                                    255, 6, 95, 167),
+                                              ),
+                                              recognizer: TapGestureRecognizer()
+                                                ..onTap = () async {}),
+                                        ),
+                                      ],
                                     ),
-                                  ],
-                                ),
+                                  ),
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.end,
+                                    children: [
+                                      IconButton(
+                                        splashRadius: 0.0001,
+                                        padding: EdgeInsets.zero,
+                                        constraints: const BoxConstraints(
+                                            minWidth: 15, maxWidth: 15),
+                                        onPressed: () {},
+                                        icon: Icon(
+                                          FontAwesomeIcons.eye,
+                                          color:
+                                              Color.fromARGB(255, 120, 62, 25),
+                                          size: 15,
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.only(
+                                            left: 5, right: 5),
+                                        child: Text(
+                                          "378",
+                                          style: TextStyle(
+                                            fontFamily: "Lato",
+                                            fontSize: 11,
+                                          ),
+                                        ),
+                                      ),
+                                      IconButton(
+                                        splashRadius: 0.0001,
+                                        padding: EdgeInsets.zero,
+                                        constraints: const BoxConstraints(
+                                            minWidth: 15, maxWidth: 15),
+                                        onPressed: () {},
+                                        icon: Icon(
+                                          FontAwesomeIcons.leaf,
+                                          color:
+                                              Color.fromARGB(255, 79, 125, 67),
+                                          size: 15,
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.only(left: 5),
+                                        child: Text(
+                                          "244",
+                                          style: TextStyle(
+                                            fontFamily: "Lato",
+                                            fontSize: 11,
+                                          ),
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ],
                               ),
                             ),
                           ],
@@ -495,6 +371,13 @@ class _ArticleUserPageState extends State<ArticleUserPage> {
               ),
             ),
           ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Color.fromARGB(255, 79, 125, 67),
+        onPressed: () {},
+        child: Icon(
+          Icons.add,
         ),
       ),
     );
