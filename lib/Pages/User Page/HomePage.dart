@@ -94,6 +94,174 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
+            SliverToBoxAdapter(
+              child: Container(
+                padding: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        CircleAvatar(
+                          radius: 20,
+                          backgroundImage: AssetImage('assets/image/user2.jpg'),
+                        ),
+                        SizedBox(width: 10),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Nanang Sumanto',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Text(
+                              '2 hours ago',
+                              style: TextStyle(
+                                fontSize: 10,
+                                color: Colors.grey,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 10),
+                    Text(
+                      'Bagaimana agar tanaman bisa tumbuh subur?',
+                      style: TextStyle(
+                        fontFamily: "LatoBold",
+                        fontSize: 12,
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    Text(
+                      'Jadi saya nanem pohon apel. Terus pohonnya udah 5 tahun ga tumbuh tumbuh buah. Padahal pohonnya udah tinggi, daunnya juga banyak. Itu harus diapain ya kira kira?',
+                      style: TextStyle(
+                        fontFamily: "Lato",
+                        fontSize: 12,
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    Align(
+                      alignment: Alignment.bottomCenter,
+                      child: Image.asset('assets/image/post1.jpg'),
+                    ),
+                    SizedBox(height: 10),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Icon(
+                          Icons.thumb_up,
+                          size: 15,
+                        ),
+                        SizedBox(width: 10),
+                        Icon(
+                          Icons.comment,
+                          size: 15,
+                        ),
+                        SizedBox(width: 10),
+                        Icon(
+                          Icons.share,
+                          size: 15,
+                        ),
+                        SizedBox(width: 15),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            SliverToBoxAdapter(
+              child: Container(
+                margin: EdgeInsets.only(top: 10),
+                padding: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        CircleAvatar(
+                          radius: 20,
+                          backgroundImage: AssetImage('assets/image/user3.jpg'),
+                        ),
+                        SizedBox(width: 10),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Ibnu Maulana',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Text(
+                              '5 hours ago',
+                              style: TextStyle(
+                                fontSize: 10,
+                                color: Colors.grey,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 10),
+                    Text(
+                      'Bagaimana agar tanaman bisa tumbuh subur?',
+                      style: TextStyle(
+                        fontFamily: "LatoBold",
+                        fontSize: 12,
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    Text(
+                      'Saya sering pergi ke hutan untuk sekedar berkelana atau mendaki. Selalu terpesona dengan pohon pohon besar yang subur seperti ini. Apalagi kalau duduk di bawahnya terasa adem. Perlu pupuk gak yah untuk bisa membuat pohon tumbuh subur sebesar ini?',
+                      style: TextStyle(
+                        fontFamily: "Lato",
+                        fontSize: 12,
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    Align(
+                      alignment: Alignment.bottomCenter,
+                      child: Image.asset(
+                        'assets/image/post2.jpg',
+                        height: 100,
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Icon(
+                          Icons.thumb_up,
+                          size: 15,
+                        ),
+                        SizedBox(width: 10),
+                        Icon(
+                          Icons.comment,
+                          size: 15,
+                        ),
+                        SizedBox(width: 10),
+                        Icon(
+                          Icons.share,
+                          size: 15,
+                        ),
+                        SizedBox(width: 15),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),
