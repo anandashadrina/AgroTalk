@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "959203497833",
+    "project_id": "agrotalk-7c291",
+    "storage_bucket": "agrotalk-7c291.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959203497833:android:39af93651b009da4f48ff8",
+        "android_client_info": {
+          "package_name": "com.example.agrotalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "959203497833-5vie2uk1a730t2sduuq3lmk6ahbbhfo0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuhL5vLe8ccchVy2yXgM5xZKFLAE0_giE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "959203497833-5vie2uk1a730t2sduuq3lmk6ahbbhfo0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

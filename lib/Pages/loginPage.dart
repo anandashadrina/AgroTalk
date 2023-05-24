@@ -1,16 +1,29 @@
 import 'package:agrotalk/Pages/Admin%20Page/LandingPage.dart';
 import 'package:agrotalk/Pages/RegisterPage.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'Admin Page/HomePage.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
+  LoginPage({super.key});
 
   @override
   State<LoginPage> createState() => _LoginPageState();
 }
 
 class _LoginPageState extends State<LoginPage> {
+
+  //text editing controller
+  final emailController = TextEditingController();
+  final passwordController = TextEditingController();
+  //sign user in method
+  Future<void> signUserIn() async {
+    await FirebaseAuth.instance.signInWithEmailAndPassword(
+      email: emailController.text,
+      password: passwordController.text,
+    );
+  }
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,6 +57,8 @@ class _LoginPageState extends State<LoginPage> {
               Padding(
                 padding: const EdgeInsets.only(left: 20, right: 20, top: 10),
                 child: TextFormField(
+                  controller: emailController,
+                  obscureText: false,
                   decoration: const InputDecoration(
                     hintText: 'Email',
                   ),
@@ -52,6 +67,7 @@ class _LoginPageState extends State<LoginPage> {
               Padding(
                 padding: const EdgeInsets.only(left: 20, right: 20, top: 10),
                 child: TextFormField(
+                  controller: passwordController,
                   obscureText: true,
                   decoration: const InputDecoration(
                     hintText: 'Password',
@@ -64,14 +80,7 @@ class _LoginPageState extends State<LoginPage> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20),
                   ),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const LandingPage(),
-                      ),
-                    );
-                  },
+                  onPressed: signUserIn,
                   color: const Color(0xFF4F7D43),
                   textColor: Colors.white,
                   child: const Text(
@@ -118,4 +127,5 @@ class _LoginPageState extends State<LoginPage> {
       ),
     );
   }
+
 }

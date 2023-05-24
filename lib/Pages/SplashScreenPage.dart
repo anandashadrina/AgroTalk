@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:agrotalk/Pages/AuthPage.dart';
 import 'package:agrotalk/Pages/loginPage.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +17,7 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
     var duration = Duration(seconds: 5);
     return Timer(
       duration, (){
-      Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context) => LoginPage()
+      Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context) => AuthPage()
       ), (route) => false);
       }
     );

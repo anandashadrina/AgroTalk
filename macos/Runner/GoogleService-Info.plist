@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>959203497833-mspsd9gii21ijnlkc7p4n02cvd0f9san.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.959203497833-mspsd9gii21ijnlkc7p4n02cvd0f9san</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB_TxjfHXU58d0AxhDiZYHIvVCEFBxhPTs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>959203497833</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.agrotalk</string>
+	<key>PROJECT_ID</key>
+	<string>agrotalk-7c291</string>
+	<key>STORAGE_BUCKET</key>
+	<string>agrotalk-7c291.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:959203497833:ios:95cd1b503e96cd73f48ff8</string>
+</dict>
+</plist>
