@@ -155,12 +155,21 @@ class _HomePageState extends State<HomePage> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        Icon(Icons.thumb_up),
+                        Icon(
+                          Icons.thumb_up,
+                          size: 15,
+                        ),
                         SizedBox(width: 10),
-                        Icon(Icons.comment),
+                        Icon(
+                          Icons.comment,
+                          size: 15,
+                        ),
                         SizedBox(width: 10),
-                        Icon(Icons.share),
-                        SizedBox(width: 10),
+                        Icon(
+                          Icons.share,
+                          size: 15,
+                        ),
+                        SizedBox(width: 15),
                       ],
                     ),
                   ],
@@ -232,12 +241,21 @@ class _HomePageState extends State<HomePage> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        Icon(Icons.thumb_up),
+                        Icon(
+                          Icons.thumb_up,
+                          size: 15,
+                        ),
                         SizedBox(width: 10),
-                        Icon(Icons.comment),
+                        Icon(
+                          Icons.comment,
+                          size: 15,
+                        ),
                         SizedBox(width: 10),
-                        Icon(Icons.share),
-                        SizedBox(width: 10),
+                        Icon(
+                          Icons.share,
+                          size: 15,
+                        ),
+                        SizedBox(width: 15),
                       ],
                     ),
                   ],
